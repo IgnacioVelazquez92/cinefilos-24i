@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarme</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="icon" href="/images/Logo.png">
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body class="bg-dark ">
+  <header class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand col-3" href="/index.html">
+          <div class="logo-navbar d-flex align-items-center me-5">
+            <img src="/images/Logo.png" style="width: 50px;" alt="Logo">
+            <h4 class="navbar-brand fs-3 text-light">Cinefilos</h4>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light fs-5 fw-bold mx-3" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-5 fw-bold mx-3" href="/Pages/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light fs-5 fw-bold mx-3" href="/Pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <button class="btn btn-danger text-light fs-5 fw-bold mx-1" data-bs-toggle="modal" data-bs-target="#subscribe-modal">Prémium</button>
+          <button class="btn btn-light fs-5 fw-bold mx-1" type="submit"><a class="text-decoration-none text-dark" href="/Pages/Registro.html"> Registrarse</a></button>
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="subscribe-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Subscripción Prémium</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="form">
+              <label class="form-label" for="email">
+                <span>Para la Subscripción prémium solo ingresa tu correo electrónico</span>
+                <input type="email" id="email" class="form-control">                  
+              </label>
+              <label class="form-check-label" for="check">
+                <input type="checkbox" id="checkbox" class="form-check-input">                  
+                <span>Acepto <a target="_blank" href="/Pages/error404.html">Términos y condiciones</a></span>
+              </label>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" id="email" class="btn btn-outline-dark">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid row my-5 justify-content-lg-around justify-content-center">
+    <section class="container col-12 col-lg-5">
+      <h4 class="text-light pt-5 text-center">Contacto:</h4>
+      <form action="" class="my-2">
+        <div class="form-floating">
+          <select class="form-select mb-4" id="floatingSelect" required aria-label="Floating label select example">
+            <option selected>Despliegue para ver opciones.</option>
+            <option value="Reclamo">Reclamo/Denuncia.</option>
+            <option value="Soporte">Soporte técnico</option>
+            <option value="equipo">Quiero ser parte del equipo.</option>
+            <option value="Otro">Otro.</option>
+          </select>
+          <label for="floatingSelect">Tipo de contacto</label>
+        </div>
+        <div class="form-floating mb-4">
+          <input type="email" class="form-control" id="floatingInput" required placeholder="Tu correo eléctronico:">
+          <label for="floatingInput">Tu correo electrónico:</label>
+        </div>
+        <div class="form-floating mb-4">
+          <textarea class="form-control" required placeholder="Escribe tu comentario aquí:" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Escribe tu comentario aquí:</label>
+        </div>
+        <button type="submit" id="email" class="btn btn-danger text-light fw-bold">Enviar</button>
+      </form>
+    </section>
+    <section class="container col-lg-5">
+      <h4 class="text-light pt-5 text-center">O encontranos en nuestras oficinas:</h4>
+      <div class="container">
+        <div class="ratio ratio-4x3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.0255643557465!2d-65.207748970836!3d-26.836699702283774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1665790212391!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-black">
+    <div class="container text-center text-white fs-5 py-3">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-4">
+          <img class="logo-footer" src="/images/Logo.png" alt="logo-de-la-pagina">
+          <span class="titulo-footer fs-3">Cinefilos</span>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <a href="#"><img src="/images/Logo-Facebook.png" alt="logo-facebook" class="imagen-redes"></a>
+          <span class="titulo-footer">Cinefilos</span>
+          <br>
+          <a href="#"><img src="/images/Logo-Instagram.png" alt="logo-Instagram" class="imagen-redes"></a>
+          <span class="titulo-footer">Cinefilos</span>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img src="/images/Logo-CallCenter.png" alt="logo-contacto" class="logo-footer">
+          <span class="titulo-footer fs-4">Contactanos: 381-xxx-xxxx</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
