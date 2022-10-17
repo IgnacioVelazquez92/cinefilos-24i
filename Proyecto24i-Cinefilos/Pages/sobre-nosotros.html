@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de Cinefilos</title>
+  <link rel="icon" href="/images/Logo.png">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body class="bg-dark">
+  <header class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand col-3" href="/index.html">
+          <div class="logo-navbar d-flex align-items-center me-5">
+            <img src="/images/Logo.png" style="width: 50px;" alt="Logo">
+            <h4 class="navbar-brand fs-3 text-light">Cinefilos</h4>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light fs-5 fw-bold mx-3" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-5 fw-bold mx-3" href="/Pages/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light fs-5 fw-bold mx-3" href="/Pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <button class="btn btn-danger text-light fs-5 fw-bold mx-1" data-bs-toggle="modal" data-bs-target="#subscribe-modal">Prémium</button>
+          <button class="btn btn-light fs-5 fw-bold mx-1" type="submit"><a class="text-decoration-none text-dark" href="/Pages/Registro.html"> Registrarse</a></button>
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="subscribe-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Subscripción Prémium</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="form">
+              <label class="form-label" for="email">
+                <span>Para la Subscripción prémium solo ingresa tu correo electrónico</span>
+                <input type="email" id="email" class="form-control">                  
+              </label>
+              <label class="form-check-label" for="check">
+                <input type="checkbox" id="checkbox" class="form-check-input">                  
+                <span>Acepto <a target="_blank" href="/Pages/error404.html">Términos y condiciones</a></span>
+              </label>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" id="email" class="btn btn-outline-dark">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="text-white my-5 py-5">
+    <section class="container">
+      <div class="row">
+        <h1>Equipo Cinefilos</h1>
+        <h3>"La fuerza del equipo viene de cada miembro"</h3>
+        <br><br><br>
+        <div class="col-lg-6">
+          <img src="/images/foto-jorge.png" alt="foto-jorge-dev">
+          <ul>
+            <li>Nombre y Apelido: Jorge Lazarte</li>
+            <li>Edad: 37</li>
+            <li>Trabajo/Estudio: Secretaria de estado ministerio del interior.</li>
+            <li>Contacto: lazarteelias10@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img src="/images/foto-ignacio.png" alt="foto-ignacio-dev">
+          <ul>
+            <li>Nombre y Apelido: Omar Ignacio Velazquez</li>
+            <li>Edad: 30</li>
+            <li>Trabajo/Estudio: Coordinador Jr. de Operaciones en Startek Latam.</li>
+            <li>Contacto: ignaciov92@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img src="/images/foto-santiago.png" alt="foto-santiago-dev">
+          <ul>
+            <li>Nombre y Apelido: Santiago Oscar Lach</li>
+            <li>Edad: 23</li>
+            <li>Trabajo/Estudio: Empleado de comercio</li>
+            <li>Contacto: santilach@hotmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img src="/images/foto-maxi.png" alt="foto-maxi-dev">
+          <ul>
+            <li>Nombre y Apelido: Maximiliano Silva</li>
+            <li>Edad: 29</li>
+            <li>Trabajo/Estudio: Técnico en hig. y seguridad</li>
+            <li>Contacto: Maxisilva18@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-black">
+    <div class="container text-center text-white fs-5 py-3">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-4">
+          <img class="logo-footer" src="/images/Logo.png" alt="logo-de-la-pagina">
+          <span class="titulo-footer fs-3">Cinefilos</span>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <a href="#"><img src="/images/Logo-Facebook.png" alt="logo-facebook" class="imagen-redes"></a>
+          <span class="titulo-footer">Cinefilos</span>
+          <br>
+          <a href="#"><img src="/images/Logo-Instagram.png" alt="logo-Instagram" class="imagen-redes"></a>
+          <span class="titulo-footer">Cinefilos</span>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img src="/images/Logo-CallCenter.png" alt="logo-contacto" class="logo-footer">
+          <span class="titulo-footer fs-4">Contactanos: 381-xxx-xxxx</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
